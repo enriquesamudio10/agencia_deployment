@@ -1,0 +1,29 @@
+extends ../layout/index
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Pellentesque id nibh vel metus viverra molestie non vel massa. Suspendisse et laoreet nisi. Donec eu dui eu metus tincidunt vulputate sed at leo. Nulla facilisi. Cras velit turpis, feugiat sit amet ante et, mattis maximus neque. Vestibulum sodales metus ligula, non egestas magna blandit vitae. 
+
+                p Sed sollicitudin quam vitae pulvinar finibus. Phasellus mollis molestie turpis, id sollicitudin metus. Quisque tellus arcu, porttitor sed est vitae, fringilla faucibus quam. Ut pellentesque sed sem eget bibendum. In hac habitasse platea dictumst.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", class="img-fluid")
+        h2.text-center.mb-5 Próximos Viajes    
+        include ../layout/partials/viajes
+    .descuento
+        .container
+            .col-md-6
+                .contenido
+                    h3 5% de Descuento
+                    p.titulo Viaje a Canada
+                    p.fecha 20 de Marzo 2019 - 28 de Marzo 2019
+                    p.precio $ 2,500 USD
+    
+    .container
+        h2.text-center.my-5 Testimoniales   
+        include ../layout/partials/testimoniales
